@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style3.css">
+    <title>Tourist</title>
+</head>
+
+<body id="bodypart">
+    <nav>
+        <div class="logo">Tourism</div>
+        <ul>
+            <li id="first"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Select Your Cities</a>
+                <ul>
+                    <li><a href="#gallery1">Lucknow</a></li>
+                    <li><a href="#gallery1">Goa</a></li>
+                    <li><a href="#gallery1">Jaipur</a></li>
+                </ul>
+            </li>
+
+            
+            <li><a href="#gallery1">Gallery</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#footer-class">Contact</a></li>
+            <li><a href="index.html">Login/Signup</a></li>
+           
+        </ul>
+    </nav>
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <img src="lck4.jpg" class="d-block w-100" alt="...">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lucknow</h5>
+                        <p>The cities of Nawab</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="jaipur2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Jaipur </h5>
+                        <p>The city of Fort</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="goa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Goa</h5>
+                        <p>The city of Beaches</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- about section start -->
+        <section class="my-5" id="about">
+            <div class="py-5">
+                <h1 class="text-center">About Us</h1>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="mainimg'.jpg" class="img-fluid  aboutImg"
+                            alt="ABout us">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h2>Why To Choose Us!</h2>
+                        <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit
+                            accusantium dignissimos quia eos commodi
+                            reprehenderit id adipisci perspiciatis animi, similique quam autem. Dolores beatae itaque
+                            voluptatem ipsam, odio nemo!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt doloribus quis labore
+                            quaerat illum repudiandae dolorem nulla provident magnam!
+                        </p>
+                        <a href="#" class="btn btn-success">Check More</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Services section start -->
+        <section class="my-5" id="services">
+            <div class="py-5">
+                <h2 class="text-center">What we Provide!</h2>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" id="cardwala">
+                            <img class="card-img-top" src="img2.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;">Atrs and Culture</h4><br>
+                                <!-- <p class="card-text">Some example text.</p> -->
+                                <a href="#" class="btn btn-primary" style="margin-left:150px;">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" id="cardwala">
+                            <img class="card-img-top" src="img4.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;">Adventures and Sports </h4>
+                                <!-- <p class="card-text">Some example text.</p> -->
+                                <br>
+                                <a href="#" class="btn btn-primary" style="margin-left:150px;">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" id="cardwala">
+                            <img class="card-img-top" src="img1.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;">Shopping</h4><br>
+                                <!-- <p class="card-text">Some example text.</p> -->
+                                <a href="#" class="btn btn-primary" style="margin-left:150px;">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--------------- gallery box section ----------------------->
+
+
+<section class="gallery" id="gallery1">
+    <h1 style="text-align: center; margin-bottom: 40px;">Travelling Gallery</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="lck1.jpg" alt="">
+                   <h4>Lucknow</h4>
+            </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="lck2.jpg" alt="">
+                   <h4>Lucknow</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="lck3.jpg" alt="">
+                   <h4>Lucknow</h4>
+            </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="lck4.jpg" alt="">
+                   <h4>Lucknow</h4>
+            </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="goa1.jpg" alt="">
+                   <h4>Goa</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="goa2.jpg" alt="">
+                   <h4>Goa</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="goa4.jpg" alt="">
+                   <h4>Goa</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="goa3.jpg" alt="">
+                   <h4>Goa</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="jaipur1.jpg" alt="">
+                   <h4>Jaipur</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="jaipur2.jpg" alt="">
+                   <h4>Jaipur</h4>
+            </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="jaipur3.jpg" alt="">
+                   <h4>Jaipur</h4>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="gallery-box">
+                   <img src="jaipur4.jpg" alt="">
+                   <h4>jaipur</h4>
+            </div>
+            </div>
+           
+        </div>
+    </div> 
+
+</section>
+
+
+<!-- gallery section box end -->
+
+
+<!------------------------- user review section start --------------------------->
+  <section class="users-feedback" id="userfeedback">
+      <h1 style="text-align: center; margin-bottom: 10px; padding-bottom: 50px;">User Review</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="user-review">
+                     
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, a ipsam eum odio eos
+                       ex impedit accusamus blanditiis in eaque nemo natus laborum quae saepe et 
+                       eligendi sapiente laudantium praesentium!
+                     </p>
+                     <h5>Anuj sharma</h5>
+                     <small>Varanasi</small>
+                    
+                  </div>
+                  <img src="goa3.jpg" alt="">
+              </div>
+              <div class="col-md-4">
+                <div class="user-review">
+                   
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, a ipsam eum odio eos
+                     ex impedit accusamus blanditiis in eaque nemo natus laborum quae saepe et 
+                     eligendi sapiente laudantium praesentium!
+                   </p>
+                   <h5>Anuj sharma</h5>
+                   <small>Varanasi</small>
+                  
+                </div>
+                <img src="goa3.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                   
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, a ipsam eum odio eos
+                     ex impedit accusamus blanditiis in eaque nemo natus laborum quae saepe et 
+                     eligendi sapiente laudantium praesentium!
+                   </p>
+                   <h5>Anuj sharma</h5>
+                   <small>Varanasi</small>
+                  
+                </div>
+                <img src="goa3.jpg" alt="">
+            </div>
+          </div>
+      </div>
+
+  </section>      
+<!------------------------------- user review section end ------------------------>
+
+
+<!------------------------------- Booking Section Start ------------------------>
+<section id="booking">
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text-black text-center" id="heading">Book Now</h1>
+                <div id="first-group">
+                    <div id="content">
+                        <i class="fa fa-user" arail-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" arail-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Phone No.">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-calender" arail-hidden="true"></i>
+                        <input type="date" id="input-group" placeholder="Booking Date">
+                    </div>
+                    <div id="content">
+                        <i class="fa fa-users" arail-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">No of Visitors</option>
+                            <option value="">1-3</option>
+                            <option value="">4-6</option>
+                            <option value="">7-10</option>
+                            <option value="">10-more</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="second-group">
+                    <div id="content">
+                        <i class="fa fa-phone" arail-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" arail-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" arail-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Your location">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" arail-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;">
+                            <option value="">Select Your city</option>
+                            <option value="">Lucknow</option>
+                            <option value="">Goa</option>
+                            <option value="">Jaipur</option>
+                        </select>
+                    </div>
+
+                </div>
+                <p id="para3" style="color:green;"></p>
+                <button type="button" style="margin-left: 330px; margin-top: 25px; border: 1px solid grey; width: 20%;height: 10%; border-radius: 5px;" onclick="fun()" id="btnn">Book Now</button>
+            </div>
+            
+        </form>
+        
+    </div>
+ 
+</section>
+
+<!------------------------------- Booking section end ------------------------>
+
+
+<!---------------------------- footer section starts ------------------------------>
+<footer>
+
+<section class="footer" id="footer-class">
+
+    <div class="box-container">
+        <div class="box">
+            <h4>Booking locations</h4>
+            <a href="#">Lucknow</a>
+            <a href="#">Goa</a>
+            <a href="#">Jaipur</a>
+        </div>
+        <div class="box">
+            <h4>Quick links</h4>
+            <a href="#bodypart">Home</a>
+            <a href="#contact">Booking</a>
+            <a href="#services">services</a>
+            <a href="#gallery1">gallery</a>
+            <a href="#userfeedback">Review</a>
+        </div>
+        <div class="box">
+            <h4>follow us</h4>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h4 class="credit">|| copyright <span> abhishekag041998@gmail.com </span> || all rights reserved! </h4>
+
+</section>
+
+</footer>
+
+
+        
+
+</body>
+<script>
+       function fun(){
+        document.getElementById("para3").innerText="Booked Successfully";
+        document.querySelector("form").reset();
+        var form = document.getElementById('form');
+       }
+var form = document.getElementById('form');
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+});
+  
+</script>
+ 
+
+</html>

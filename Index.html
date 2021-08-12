@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title login">Signup Form</div>
+        </div>
+        <h3 id="para" style="text-align: center; color: limegreen;"></h3>
+        <div class="form-container">
+             <div class="slide-controls">
+                 <input type="radio" name="slider" id="login" checked>
+                 <input type="radio" name="slider" id="signup">
+                 <label for="login" class="slide login">Login</label>
+                 <label for="signup" class="slide signup">Signup</label>
+                 <div class="slide-tab"></div>
+             </div>
+            <div class="form-inner">
+                <form action="#" class="login" name="my-form">
+                    <div class="field">
+                        <input type="text" placeholder="Email Adress" required id="uinput">
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Password" required id="upass">
+                    </div>
+                    <div class="pass-link"><a href="#">Forgot Password?</a></div>
+                    <div class="field">
+                       <input type="submit" value="login" class="btn2"  onclick="fun()" >
+                        
+                    </div>
+                    <div class="signup-link">Not a member ? <a href="#">Signup Here!</a></div>
+                </form>
+
+                <form action="#" class="signup" name="my-form">
+                    <div class="field">
+                        <input type="email" placeholder="Email Adress" required id="emailInput">
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Password" required id="pInput">
+                    </div>
+                    <div class="field">
+                        <input type="Password" placeholder="Confirm Password" required id="cpInput">
+                    </div>
+                    <div class="field">
+                        <input type="submit" name="log" value="signup" class="btn1" onclick="fun1()">
+                    </div>
+                    <div class="signin-link">Already  a member ? <a href="#">Sign in !</a></div>
+
+
+                    <div><h3 id="para2" style="color: magenta; text-align: center;"></h3></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+<script>
+   
+    const loginForm=document.querySelector("form.login");
+    const signupForm=document.querySelector("form.signup");
+    const loginBtn=document.querySelector("label.login");
+    const signupBtn=document.querySelector("label.signup");
+    const signupLink=document.querySelector(".signup-link a");
+    const signinLink=document.querySelector(".signin-link a");
+    const loginText=document.querySelector(".title-text .login");
+    const signupText=document.querySelector(".title-text .signup");
+
+   
+
+    
+
+    signupBtn.onclick=(()=>{
+        loginForm.style.marginLeft="-50%";
+        loginText.style.marginLeft="-50%";
+    });
+    loginBtn.onclick=(()=>{
+        loginForm.style.marginLeft="0%";
+        loginText.style.marginLeft="0%";
+    });
+    signupLink.onclick=(()=>{
+        signupBtn.click();
+        return false;
+       
+    });
+
+    signinLink.onclick=(()=>{
+        loginBtn.click();
+        return false;
+    });
+
+   var objPeoples=[];
+function fun1(){
+    var temp11 = document.getElementById("emailInput").value;
+    var temp22 = document.getElementById("pInput").value;
+    var pass2 = document.getElementById('cpInput').value;
+    if (temp22 == pass2 && temp22 != "" && pass2 != "" && temp11!=null){
+      
+        document.getElementById("para2").innerText="Signup Sucess" 
+    let objPeople={
+        username:document.getElementById("emailInput").value,
+        password:document.getElementById("pInput").value
+       }
+        objPeoples.push(objPeople);
+        // localStorage.setItem("data",objPeople);
+    
+    
+        console.log(objPeoples);
+    } 
+    else
+    {
+    document.getElementById("para2").innerText="Password and Confirm Password not matched"
+    }
+
+};
+
+function fun(){
+    var count=0;
+    var email2 = document.getElementById('uinput').value;
+    var pass3 = document.getElementById('upass').value;
+     for(i=0;i<objPeoples.length;i++){
+        if(email2==objPeoples[i].username && pass3==objPeoples[i].password){
+           
+          count++;
+        }
+       
+    }
+    if(count>0){
+            const node=document.createTextNode("Login Success");
+            const element=document.getElementById("para");
+            element.appendChild(node);
+            alert("login sucess");
+                window.open("Resume-index.html");
+    }
+    else{
+        const node=document.createTextNode("Login Failed");
+            const element=document.getElementById("para");
+            element.appendChild(node);
+    }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    
+
+
+
+//    function fun1(){
+
+//     var email1=document.getElementById("emailInput").value;
+//     var pass1=document.getElementById("pInput").value;
+//     var cpass1=document.getElementById("cpInput").value;
+// //     sessionStorage.setItem("email",email1);
+// //    sessionStorage.setItem("pass",pass1);
+
+// localStorage.setItem("email",email1);
+// localStorage.setItem("pass",pass1);
+       
+
+//         if(pass1==cpass1){    
+//         alert("sign-up success");
+//         }
+//         else{
+//             alert("Sign-up not success")
+//         }
+          
+//  };
+
+// function fun(){
+// var email2=document.getElementById("uinput").value;
+// var pass2=document.getElementById("upass").value;
+// var temp1=localStorage.getItem("email");
+// var temp2=localStorage.getItem("pass");
+// if(temp1==email2 && temp2==pass2){
+//     alert("login successfully");
+// }
+// else{
+//     alert("Login Failed please try again");
+// }
+
+// };
+
+
+
+   
+   
+
+
+</script>
+
+</html>
